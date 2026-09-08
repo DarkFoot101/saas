@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> {% block head_title %} SaaS {% endblock head_title %} </title>
+</head>
+
+<body>
+    <h1> Hello World </h1>
+    {% block content %}
+    {% include 'snippets/welcome-user-msg.html' %}
+    <p> What a day to be alive </p>
+    {% endblock content %}
+</body>
+</head>
+
+</html>
